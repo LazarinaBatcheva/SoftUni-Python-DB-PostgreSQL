@@ -1,1 +1,1 @@
-DROP TABLE departments;
+TRUNCATE TABLE departments;
