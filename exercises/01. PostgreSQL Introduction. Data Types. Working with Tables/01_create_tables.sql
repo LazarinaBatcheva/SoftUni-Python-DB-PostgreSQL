@@ -1,22 +1,22 @@
 CREATE TABLE employees(
 	id serial NOT NULL PRIMARY KEY,
-	first_name varchar(30),
-	last_name varchar(50),
-	hiring_date date default '2023-01-01',
-	salary numeric(10, 2),
-	devices_number int
+	first_name VARCHAR(30),
+	last_name VARCHAR(50),
+	hiring_date DATE DEFAULT '2023-01-01',
+	salary NUMERIC(10, 2),
+	devices_number INT
 );
 
 CREATE TABLE departments(
-	id serial NOT NULL PRIMARY KEY,
-	name varchar(50),
-	code char(3),
-	description text
+	id SERIAL NOT NULL PRIMARY KEY,
+	name VARCHAR(50),
+	code CHAR(3),
+	description TEXT
 );
 
 CREATE TABLE issues(
-	id serial UNIQUE PRIMARY KEY,
-	description varchar(150),
-	date date,
-	start timestamp
+	id SERIAL UNIQUE PRIMARY KEY,
+	description VARCHAR(150),
+	date DATE,
+	start TIMESTAMP
 );
