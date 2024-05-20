@@ -8,6 +8,6 @@ WHERE
 SELECT 
     * 
 FROM 
-employees
+    employees
 WHERE
     job_title = 'Manager';
