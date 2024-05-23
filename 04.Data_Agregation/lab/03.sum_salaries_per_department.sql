@@ -1,6 +1,6 @@
 SELECT
     department_id,
-    COUNT(*) AS employee_count
+    SUM(salary) AS total_salaries
 FROM
     employees
 GROUP BY

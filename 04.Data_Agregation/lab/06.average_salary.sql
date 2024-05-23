@@ -1,6 +1,6 @@
 SELECT
     department_id,
-    COUNT(*) AS employee_count
+    AVG(salary) AS avg_salarysalary
 FROM
     employees
 GROUP BY

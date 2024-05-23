@@ -1,6 +1,6 @@
 SELECT
     department_id,
-    COUNT(*) AS employee_count
+    MIN(salary) AS min_salary
 FROM
     employees
 GROUP BY

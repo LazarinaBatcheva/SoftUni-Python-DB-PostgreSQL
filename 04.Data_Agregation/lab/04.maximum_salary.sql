@@ -1,6 +1,6 @@
 SELECT
     department_id,
-    COUNT(*) AS employee_count
+    MAX(salary) AS max_salary
 FROM
     employees
 GROUP BY
