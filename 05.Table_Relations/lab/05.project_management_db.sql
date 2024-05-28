@@ -17,5 +17,5 @@ CREATE TABLE employees(
 );
 
 ALTER TABLE projects
-ADD CONSTRAINT project_lead_id
+ADD CONSTRAINT fk_projects_employees
     FOREIGN KEY (project_lead_id) REFERENCES employees(id);
