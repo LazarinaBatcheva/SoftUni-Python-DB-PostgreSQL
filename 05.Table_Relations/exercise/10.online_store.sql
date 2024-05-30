@@ -42,7 +42,9 @@ CREATE TABLE order_items (
     CONSTRAINT pk_order_items
         PRIMARY KEY (order_id, item_id),
 
-    CONSTRAINT fk_order_items
+    CONSTRAINT fk_order_items_orders
         FOREIGN KEY (order_id) REFERENCES orders(id),
+    
+    CONSTRAINT fk_order_items_items
         FOREIGN KEY (item_id) REFERENCES items(id)
 );

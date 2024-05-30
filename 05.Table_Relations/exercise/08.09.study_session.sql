@@ -21,8 +21,10 @@ CREATE TABLE students_exams (
     student_id INT,
     exam_id INT,
 
-    CONSTRAINT fk_students_exams
+    CONSTRAINT fk_students_exams_students
         FOREIGN KEY (student_id) REFERENCES students(id),
+    
+    CONSTRAINT fk_students_exams_exams
         FOREIGN KEY (exam_id) REFERENCES exams(id)
 );
 
