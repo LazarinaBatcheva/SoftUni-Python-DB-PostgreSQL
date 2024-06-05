@@ -4,7 +4,8 @@ SET
 WHERE
     country_name = 'Myanmar';
 
-INSERT INTO monasteries (monastery_name, country_code)
+INSERT INTO 
+    monasteries (monastery_name, country_code)
 VALUES
     (
      'Hanga Abbey',
