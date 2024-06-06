@@ -21,6 +21,4 @@ LANGUAGE plpgsql;
 -- CALL sp_deposit_money(10, 500);
 -- CALL sp_deposit_money(14, 1000);
 --
--- SELECT * FROM accounts WHERE id = 1;
--- SELECT * FROM accounts WHERE id = 10;
--- SELECT * FROM accounts WHERE id = 14;
+-- SELECT * FROM accounts WHERE id IN (1, 10, 14);

@@ -28,5 +28,4 @@ LANGUAGE plpgsql;
 -- CALL sp_withdraw_money(3, 5050.7500);
 -- CALL sp_withdraw_money(6, 5437.0000);
 --
--- SELECT * FROM accounts WHERE id = 3;
--- SELECT * FROM accounts WHERE id = 6;
+-- SELECT * FROM accounts WHERE id IN (3, 6);
