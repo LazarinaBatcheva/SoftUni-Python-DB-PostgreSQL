@@ -11,14 +11,6 @@ WHERE
             )
     );
 
--- DELETE FROM publishers
--- WHERE
---     address_id IN (
---         SELECT id
---         FROM addresses
---         WHERE town LIKE 'L%'
---     );
-
 DELETE FROM addresses
 WHERE
     town LIKE 'L%';
