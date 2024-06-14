@@ -9,7 +9,7 @@ SELECT
 FROM
     players AS p
     JOIN skills_data AS sd
-    ON p.skills_data_id = sd.id
+        ON p.skills_data_id = sd.id
 WHERE
     p.position = 'A'
     AND

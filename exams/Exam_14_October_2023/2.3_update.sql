@@ -9,6 +9,6 @@ WHERE
     FROM
         players AS p
         JOIN players_coaches AS pc
-        ON p.id = pc.player_id
+            ON p.id = pc.player_id
     WHERE
         coaches.id = pc.coach_id) > 0;
