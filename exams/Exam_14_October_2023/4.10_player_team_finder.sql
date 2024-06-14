@@ -17,3 +17,10 @@ $$
     END;
 $$
 LANGUAGE plpgsql;
+
+
+-- test code
+-- 
+-- CALL sp_players_team_name('Thor Serrels', '');
+-- CALL sp_players_team_name('Walther Olenchenko', '');
+-- CALL sp_players_team_name('Isaak Duncombe', '');
